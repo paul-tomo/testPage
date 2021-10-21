@@ -7,3 +7,24 @@
 This is a test page. <br> index
 </body>
 </html>
+
+
+<form>
+First Number: </br>
+<input type="number" name="firstnum" id="firstnum"></br>
+Second Number:</br>
+<input type="number" name="secondnum" id="secondnum"></br>
+<input type="button" value="Submit" onClick="cal()"></br>
+Output: <span id="ans"> </span>
+</form>
+
+<script>
+function cal() { 
+  var a = document.getElementById("firstnum").value;
+  var b = document.getElementById("secondnum").value;
+  var c = Number(a) + Number(b);
+  document.getElementById("ans").innerHTML = c;
+}
+</script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
