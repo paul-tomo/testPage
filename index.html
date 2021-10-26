@@ -22,7 +22,7 @@ Anisotropic Field (A/m): <span id="Hk"> </span>
 function cal() { 
   var a = document.getElementById("Ms").value;
   var b = document.getElementById("Ku").value;
-  var c = 2.0 * Number(b) / Number(b);
+  var c = 2.0 * Number(b) / Number(a);
   document.getElementById("Hk").innerHTML = c;
 }
 </script>
