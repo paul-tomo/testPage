@@ -10,20 +10,20 @@ This is a test page. <br> index
 
 
 <form>
-First Number: </br>
-<input type="number" name="firstnum" id="firstnum"></br>
-Second Number:</br>
-<input type="number" name="secondnum" id="secondnum"></br>
+Saturation Magnetization (T): </br>
+<input type="number" name="Ms_T" id="Ms"></br>
+Anisotropic Constant (J/m3):</br>
+<input type="number" name="Ku" id="Ku"></br>
 <input type="button" value="Submit" onClick="cal()"></br>
-Output: <span id="ans"> </span>
+Anisotropic Field (A/m): <span id="Hk"> </span>
 </form>
 
 <script>
 function cal() { 
-  var a = document.getElementById("firstnum").value;
-  var b = document.getElementById("secondnum").value;
-  var c = Number(a) * Number(b);
-  document.getElementById("ans").innerHTML = c;
+  var a = document.getElementById("Ms").value;
+  var b = document.getElementById("Ku").value;
+  var c = 2.0 * Number(b) / Number(b);
+  document.getElementById("Hk").innerHTML = c;
 }
 </script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
